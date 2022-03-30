@@ -1,0 +1,59 @@
+#container{
+    
+    width:90vw;
+    height:95vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin:auto;
+    background-color: black;
+    border:2px solid;
+    border-color: grey;
+}
+body{
+    background-color:black;
+}
+#simuleFenetre{
+    color:white;
+    font-size:20;
+    height:35px;
+    bottom:0;
+    border-bottom: 1px solid;
+    border-color: grey;
+
+}
+#nomSimuleFenetre{
+    margin: 5px;
+    position: absolute;
+}
+.iconSimuleFenetre{
+    position: absolute;
+    height:20px;
+    width:20px;
+
+
+}
+.boutonsSimuleFenetre{
+
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:60px;
+  
+    float:right;
+    
+}
+#fermer:hover{
+    background-color: red;
+    cursor:pointer;
+}
+#fermer{
+    transition: 1s;
+}
+#canvas{
+    position:relative;
+    display:block;
+}
+
+
+
