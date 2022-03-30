@@ -16,7 +16,9 @@ class Snake{
     }
 
     moveHead(){
+        
         const head = this.blocks[0];
+        
         switch (currentDirection) {
             case 'gauche':
                 head.x = head.x - 1;
@@ -24,10 +26,10 @@ class Snake{
             case 'droite':
                 head.x = head.x + 1;
                 break;
-            case 'bas':
+            case 'Bas':
                 head.y = head.y + 1;
                 break;
-            case 'haut':
+            case 'Haut':
                 head.y = head.y - 1;
                 break;
             default:
