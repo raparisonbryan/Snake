@@ -35,6 +35,7 @@ class Snake{
             default:
                 break;
         }
+        head.teleportIfOutOfMap();
     }
 
     update(){

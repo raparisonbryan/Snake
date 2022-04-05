@@ -1,5 +1,5 @@
-const GAME_SIZE = 600;
-const SQUARE_SIZE = 5;
+const GAME_SIZE = 500;
+const SQUARE_SIZE = 10;
 const canva = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let currentDirection = 'droite';
@@ -40,6 +40,7 @@ function detectKeyPressed(){
             default:
                 break;
         }
+        head.teleportIfOutOfMap();
     } );
 }
 
