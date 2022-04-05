@@ -1,17 +1,29 @@
 const GAME_SIZE = 500;
+
 const SQUARE_SIZE = 10;
 const canva = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let currentDirection = 'droite';
+const faille = new Faille();
 const snake = new Snake(SQUARE_SIZE);
+
+
 function clearScreen(){
     ctx.clearRect(0,0,GAME_SIZE,GAME_SIZE);
 }
 function update(){
-    clearScreen();
-    snake.update();
-    console.log("refresh game");
-    setTimeout(update,100);
+    if(snake.state){
+        clearScreen();
+        snake.update();
+        faille.draw();
+        console.log("refresh game");
+        setTimeout(update,100);
+        
+    }
+    
+    
+    
+
 }
 
 function start(){
@@ -40,6 +52,7 @@ function detectKeyPressed(){
             default:
                 break;
         }
+        head=snake.blocks[0];
         head.teleportIfOutOfMap();
     } );
 }
