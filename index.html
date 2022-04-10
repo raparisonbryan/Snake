@@ -19,20 +19,22 @@
                 <div class="boutonsSimuleFenetre" id="reduire"><img class="iconSimuleFenetre" src="./images/reduire.png"></div>
                                                           
             </div>
-            <canvas id="canvas" width="500" height="500">
-
-
-            </canvas>
-
+            <canvas id="canvas" width="500" height="500"></canvas>
         </div>
+
+        <form action="" id="mode_form"> 
+            <input type="radio" name="mode" id="simply" value="simply" checked />
+            <label for="simply"> Simple </label>
+            <input type="radio" name="mode" id="middle" value="middle" />
+            <label for="middle"> Moyen </label>
+            <input type="radio" name="mode" id="hard" value="hard" />
+            <label for="hard"> Difficile </label>
+        </form>
+
         <script type="text/javascript" src="js/Block.js"></script>
         <script type="text/javascript" src="js/Faille.js"></script>
         <script type="text/javascript" src="js/Snake.js"></script>
-
         <script type="text/javascript" src="js/Game.js"></script>
-
-
-
     </div>
 
 </body>
